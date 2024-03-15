@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    // Escreva um programa em Javascript e crie uma variável chamada "nome_do_carro" e atribua-a um valor "Fusca". Exiba-a ao usuário.
+    var nome_do_carro = "Fusca"
+    
+    //Escreva um programa em Javascript em que o usuário informe o seu nome e exiba a mensagem "Olá, [NomeDoUsuario]".
+    alert('Olá usuario digite seu nome ') 
+    var nome = prompt();
+    alert("Olá, "+ nome)
+    
+
+    // 3 Escreva um programa em Javascript em que o usuário informe o seu nome e em seguida o programa perguntará a idade do usuário. Agora o programa deve exibir a mensagem "Olá, [NomeDoUsuario], sua idade é [idade]".
+    alert('Agora digite sua idade')
+    var idade = prompt();
+    alert('Ola usuario seu nome é: ' + nome + ' e sua idade é: ' + idade)
+    
+
+//Considerando a figura abaixo, escreva um programa para cada forma que calcule e exiba em tela cada uma de suas respectivas áreas. O usuário irá informar os valores de cada variável.
+    id = parseInt(prompt("Você quer calcular a area de qual elemento, digite o numero: 1 - Retangulo , 2 - Quadrado, 3 - Losango, 4 - Trapézio, 5 - Paralelogramo, 6 - Triangulo, 7 - Circulo"))
+
+    switch (id) {
+
+        case 1:
+            baseRetangulo = parseInt(prompt("Digite a base do retangulo: "))
+            alturaRetangulo = parseInt(prompt("Digite a altura do retangulo: "))
+            var retangulo = baseRetangulo * alturaRetangulo
+            alert("a area do retangulo é: " + retangulo)
+            break
+
+        case 2:
+            baseQuadrado = parseInt(prompt("Digite o lado do quadrado: "))
+            quadradoArea = basequadrado * baseQuadrado
+            alert("A area do quadrado é: " + quadradoArea)
+            break
+
+        case 3:
+            diagoMaior = parseInt(prompt("Digite a area maior do losango: "))
+            diagoMenor = parseInt(prompt("Digite a area menor do losango: "))
+            areaLosango = (diagoMaior * diagoMenor) / 2
+            alert("A area do losango é: " + areaLosango)
+            break
+
+        case 4:
+            trapezioMaior = parseInt(prompt("Digite a base maior do trapezio: "))
+            trapezioMenor = parseInt(prompt("Digite a base menor do trapezio: "))
+            alturaTrapezio = parseInt(prompt("Digite a altura do trapezio:  "))
+            areaTrapezio = ((trapezioMaior * trapezioMenor) * alturaTrapezio) / 2
+            alert("A area do trapezio é : " + areaTrapezio)
+            break
+
+        case 5:
+            pararaleloBase = parseInt(prompt("Digite a base do pararelo: "))
+            paraleloAltura = parseInt(prompt("Digite a altura do paralelo: "))
+            areaParalelo = pararaleloBase * paraleloAltura
+            alert("A area do paralelo é: " + areaParalelo)
+            break
+
+        case 6:
+            trianguloloBase = parseInt(prompt("Digite a base do triangulo: "))
+            trianguloAltura = parseInt(prompt("Digite a altura do triangulo: "))
+            areaTriangulo = (trianguloloBase * trianguloAltura) / 2
+            alert("A area do triangulo é: " + areaTriangulo)
+            break
+
+        case 7: 
+            raioCirculo = parseFloat(prompt('Digite o raio do ciruclo (use " . " para valores flutuantes): '))
+            pi = 3.14169
+            areaCirculo = pi * (raioCirculo * raioCirculo)
+            alert("O valor da area do circulo é: " + areaCirculo)
+            break
+        }
+
+</script>
+</body>
+
+</html>
